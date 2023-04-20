@@ -50,6 +50,7 @@ public class FurnitureSpawn : MonoBehaviour
         {
             gameObjects[i] = Instantiate(polygons[i].sprite);
             gameObjects[i].transform.position = new Vector3((float)polygons[i].Center[0], 0.5f, (float)polygons[i].Center[1]);
+            gameObjects[i].transform.rotation = new Quaternion(0, polygons[i].Rotation, 0, 0);
         }
     }
 }
